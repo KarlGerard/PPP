@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  height: 100vh;
+  position: relative;
+  background-image: url('/illustration/arrière\ plan4.png'); /* Chemin vers votre image */
+  background-size: cover; /* Pour que l'image couvre toute la fenêtre */
+  background-position: center; /* Pour centrer l'image */
+}
+
+.case {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  position: absolute;
+}
+
+#start {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; /* Définir un z-index plus élevé */
+}
+
+#end {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#character {
+  width: 8%;
+  height: 15%;
+  background-image: url('Obock3.png'); /* Chemin vers votre image */
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  bottom: 0; /* Ajustement pour laisser de la place aux boutons */
+  transform: translateX(-50%);
+  z-index: 2; /* Assurer que le personnage est au-dessus de la case de départ */
+}
+
+button {
+  background-color: transparent;
+  border: 1% solid #007AFF;
+  color: #007AFF;
+  padding: 1% 2%;
+  font-size: 3vw;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
+#recule {
+  left: 8%; /* Positionner le bouton "Recule" à gauche */
+}
+
+
+
+/* Au survol */
+button:hover {
+  background-color: #007AFF;
+  color: #FFF;
+}
+
+/* Lorsqu'il est pressé */
+button:active {
+  background-color: #0056B3; /* Légèrement plus foncé lorsqu'il est pressé */
+  border-color: #0056B3;
+}
