@@ -5,6 +5,14 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body class="game-body">
+  <script>
+    // Vérifier si le cookie d'authentification est présent
+    const isAuthenticated = document.cookie.split(';').some((item) => item.trim().startsWith('user_authenticated='));
+    if (!isAuthenticated) {
+      // Rediriger vers la page de connexion si l'utilisateur n'est pas authentifié
+      window.location.href = 'login.html';
+    }
+  </script>
   <div id="game-page" style="display: none;"></div>
     <div id="start" class="case"></div>
     <div id="character"></div>

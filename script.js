@@ -3,6 +3,7 @@ const advanceButton = document.getElementById('avance');
 const retreatButton = document.getElementById('recule');
 
 
+
 // Coordonnées de chaque étape du parcours en zigzag
 const moves = [
   { x: '50%', y: '0%' },     

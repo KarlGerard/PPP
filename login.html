@@ -3,10 +3,14 @@
 <head>
   <title>Connexion</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Importation de Font Awesome -->
 </head>
 <body class="login-body">
   <div id="login-page">
-    <input type="password" id="password" placeholder="Entrez le mot de passe">
+    <div class="input-container">
+      <input type="password" id="password" placeholder="Mot de passe">
+      <button id="toggle-password"><i class="fas fa-eye-slash"></i></button> <!-- Icône pour masquer le mot de passe par défaut -->
+    </div>
     <button id="login-button">Connexion</button>
   </div>
   <script src="login.js"></script>

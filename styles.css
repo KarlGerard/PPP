@@ -5,26 +5,49 @@
 }
 
 /* Style pour la page de connexion */
+/* Style pour la page de connexion */
 #login-page {
   position: absolute;
-  top: 10%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 
+.input-container {
+  position: relative;
+  /*padding: 0 20px;*/
+}
+
 #password {
-  padding: 10px;
+  padding: 12px;
+  width: calc(100% - 50px);
   margin-bottom: 20px;
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+#toggle-password {
+  position: absolute;
+  top: calc(50% - 1.2em); /* Ajustement de la position verticale */
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 #login-button {
-  padding: 10px 20px;
+  padding: 12px 20px;
+  border: none; /* Supprime la bordure */
+  outline: none; /* Supprime la bordure de focus */
   cursor: pointer;
-  border: none;
   background-color: #007AFF;
   color: white;
-  border-radius: 5px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 #login-button:hover {
