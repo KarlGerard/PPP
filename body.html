@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-  </head>
-  <body>
+<head>
+  <title>ProcesPrisonPardon</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body class="game-body">
+  <div id="game-page" style="display: none;"></div>
     <div id="start" class="case"></div>
     <div id="character"></div>
-    <button id="avance">+</button>
-    <button id="recule">-</button>
+    <div id="buttons"> <!-- Utilisation de l'identifiant correct -->
+      <button id="avance">+</button>
+      <button id="recule">-</button>
+    </div>
     <div id="end" class="case"></div>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>

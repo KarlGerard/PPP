@@ -1,4 +1,46 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style pour la page de connexion */
+#login-page {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#password {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#login-button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #007AFF;
+  color: white;
+  border-radius: 5px;
+}
+
+#login-button:hover {
+  background-color: #0056B3;
+}
+
+.login-body {
+  margin: 0;
+  height: 100vh;
+  position: relative;
+  background-color: white; /* Fond blanc pour la page de connexion */
+}
+
+
+/* Style pour la page de jeu */
+.game-body {
   margin: 0;
   height: 100vh;
   position: relative;
@@ -39,9 +81,9 @@ body {
   z-index: 2; /* Assurer que le personnage est au-dessus de la case de départ */
 }
 
-button {
+#buttons button {
   background-color: transparent;
-  border: 1% solid #007AFF;
+  border: 1px solid #007AFF;
   color: #007AFF;
   padding: 1% 2%;
   font-size: 3vw;
@@ -50,27 +92,23 @@ button {
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   position: absolute;
   top: 2%;
-  left: 1%;
-  -webkit-border-radius: 10%;
-  -moz-border-radius: 10%;
-  -ms-border-radius: 10%;
-  -o-border-radius: 10%;
 }
 
+#avance {
+  left: 1%;
+}
 #recule {
   left: 8%; /* Positionner le bouton "Recule" à gauche */
 }
 
-
-
 /* Au survol */
-button:hover {
+#buttons button:hover {
   background-color: #007AFF;
   color: #FFF;
 }
 
 /* Lorsqu'il est pressé */
-button:active {
-  background-color: #0056B3; /* Légèrement plus foncé lorsqu'il est pressé */
+#buttons button:active {
+  background-color: #0056B3;
   border-color: #0056B3;
 }
