@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ProcesPrisonPardon</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="icon" href="PPP1.png" type="image/x-icon">
+</head>
+<body class="game-body">
+  <script>
+    // Vérifier si le cookie d'authentification est présent
+    const isAuthenticated = document.cookie.split(';').some((item) => item.trim().startsWith('user_authenticated='));
+    if (!isAuthenticated) {
+      // Rediriger vers la page de connexion si l'utilisateur n'est pas authentifié
+      window.location.href = 'login.html';
+    }
+  </script>
+  <!--<audio id="welcomeSound" src="2TH - 67....mp3"></audio>-->
+  <div id="game-page" style="display: none;"></div>
+    <div id="start" class="case"></div>
+    <div id="character"></div>
+    <div id="buttons"> <!-- Utilisation de l'identifiant correct -->
+      <button id="avance">+</button>
+      <button id="recule">-</button>
+    </div>
+    <div id="end" class="case"></div>
+  </div>
+  <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.1/socket.io.js" integrity="sha512-YVWJS0fdRHR0CIsTtNLmq0RqLbA0ZTuJQ4APy8i6HcBqkHryD8i+cFW2uS/xA6F7gMibF8vntfBcH2e2bhm2Jw==" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

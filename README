@@ -1,0 +1,15 @@
+projet/
+│
+├── public/
+│   ├── arrière8.png
+│   ├── Obock3.png
+│   ├── PPP1.png
+│   ├── body.html
+│   ├── index.html
+│   ├── login.html
+│   ├── script.js
+│   └── styles.css
+│
+├── server.js
+├── login.js
+├── .env
