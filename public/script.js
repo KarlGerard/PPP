@@ -1,6 +1,7 @@
 const character = document.getElementById('character');
 const advanceButton = document.getElementById('avance');
 const retreatButton = document.getElementById('recule');
+const socket = io();
 
 /*document.addEventListener('DOMContentLoaded', function() {
   const welcomeSound = document.getElementById('welcomeSound');
@@ -42,26 +43,26 @@ let currentPosition = 0;
 advanceButton.addEventListener('click', () => {
   if (currentPosition < moves.length - 1) {
     currentPosition++;
-    moveCharacter();
+    sendCharacterPosition();
+    //console.log('Move character event emitted');
   }
 });
 
 retreatButton.addEventListener('click', () => {
   if (currentPosition > 0) {
     currentPosition--;
-    moveCharacter();
+    sendCharacterPosition();
+    //console.log('Move character event emitted');
   }
 });
 
-// Fonction pour déplacer le personnage à la position actuelle
 function moveCharacter() {
   const { x, y } = moves[currentPosition];
   character.style.left = x;
   character.style.bottom = y;
 }
 
-
-const socket = io();
+//const socket = io();
 
 // Fonction pour envoyer la position actuelle du personnage au serveur via socket.io
 function sendCharacterPosition() {
@@ -75,3 +76,5 @@ socket.on('moveCharacter', (data) => {
   character.style.left = x;
   character.style.bottom = y;
 });
+
+

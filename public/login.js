@@ -10,7 +10,7 @@ function checkPassword() {
 
   if (password === correctPassword) {
     document.cookie = "user_authenticated=true; path=/";
-    window.location.href = 'body.html';
+    window.location.href = 'index.html';
   } else {
     alert('Mot de passe incorrect');
   }

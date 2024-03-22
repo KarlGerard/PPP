@@ -2,8 +2,18 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "ejs": "^3.1.9",
-    "express": "^4.18.3",
+    "express": "^4.19.1",
     "http": "^0.0.1-security",
     "socket.io": "^4.7.5"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "page-web",
+  "description": "projet/\r │\r ├── public/\r │   ├── arrière8.png\r │   ├── Obock3.png\r │   ├── PPP1.png\r │   ├── body.html\r │   ├── index.html\r │   ├── login.html\r │   ├── script.js\r │   └── styles.css\r │\r ├── server.js\r ├── login.js\r ├── .env",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

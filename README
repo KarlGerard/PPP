@@ -13,3 +13,8 @@ projet/
 ├── server.js
 ├── login.js
 ├── .env
+
+
+ je cherche à faire: je veux faire une page web ou un personne avance en zigzag pour arrivé en haut de l'image à l'aide de boutton + et -. 
+J'ai fait pour cela le script.js qui permet de gérer les fonctions permettant l'avancement du personnage. Ensuite, comme l'objectif est de rendre accessible ma page, j'ai mis en place une page de login pour ne pouvoir accéder à la page principale que si le mdp est bon. J'ai donc mis en place des cookis pour enregistrer l'utilisateur. D'ou ma page login.html et login.js qui gère la page de connection et la page body.html et script.js qui gère la page principale d'interraction. Maintenant, je design a été fait à l'aide du fichier style.css qui design les différents bouttons...etc
+Finalement, l'objectif était de pouvoir mémoriser les positions du personnage en fonction des différents utilisateurs de la page web, c'est à dire que la position s'actualise pour toutes personne qui consulte la page. J'ai donc voulu mettre en place des sockets. D'ou la création de la page server.js pour gérer les interractions. Est ce comme cela qu'il faut faire pour gérer les interractions entre les utilisateurs et que si le personnage avance, il avance pour tous les utilisateurs ? 
